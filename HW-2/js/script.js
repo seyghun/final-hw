@@ -3,12 +3,17 @@ let num_M = +prompt("Введіть число M :");
 let paired_num = confirm("Чи потрібно проспускати парні числа?");
 let total = 0;
 
-if (!(Number.isInteger(num_N))) {
-    alert("Число N не підходить");
-} else if (!(Number.isInteger(num_M))) {
-    alert("Число M не підходить");
-} else if (num_M < num_N) {
+while (!(Number.isInteger(num_N)) || num_N < 0) {
+    num_N = +prompt("Число N не підходить , спробуйте ще раз");
+}
+while (!(Number.isInteger(num_M)) || num_M < 0) {
+    num_M = +prompt("Число M не підходить , спробуйте ще раз");
+}
+while (num_M < num_N) {
     alert("Операція неможлива");
+    num_N = +prompt("Введіть число N :");
+    num_M = +prompt("Введіть число M :");
+    paired_num = confirm("Чи потрібно проспускати парні числа?");
 }
 
 if (paired_num == true) {
