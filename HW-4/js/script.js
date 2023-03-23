@@ -14,43 +14,54 @@ function add(...arguments) {
     return [...arguments];
 }
 
-function getPairs(couple) {
-    let Arr = [];
-    Arr.push(add(couple[0], couple[2]));
-    Arr.push(add(couple[1], couple[3]));
-    Arr.push(add(couple[4], couple[5]));
-    return Arr;
+const getPairs = (students) => {
+    let girls = [];
+    let boys = [];
+    for (let i = 0; i < students.length; i++) {
+        if (students[i].endsWith("а")) {
+            girls.push(students[i])
+        } else {
+            boys.push(students[i])
+        }
+    }
+    const pairs = [];
+    for (let i = 0; i < boys.length; i++) {
+        pairs.push([boys[i], girls[i]]);
+    }
+    return pairs;
+};
+
+const studentsPaired = getPairs(students);
+console.log(studentsPaired);
+
+const getThemes = (studentsPaired, themes) => {
+    const getThemesForPairs = [];
+    for (let i = 0; i < studentsPaired.length; i++) {
+        getThemesForPairs.push([studentsPaired[i].join(" i "), themes[i]]);
+    }
+    return getThemesForPairs;
 }
 
-function PairAndThemes(couple, theme) {
-    let Arr = [];
-    Arr.push(add(couple[0] + " i " + couple[2], theme[0]));
-    Arr.push(add(couple[1] + " i " + couple[3], theme[1]));
-    Arr.push(add(couple[4] + " i " + couple[5], theme[2]));
-    return Arr;
+const getThemeForPairs = getThemes(studentsPaired, themes);
+console.log(getThemeForPairs);
+
+const getMarks = (students, marks) => {
+    let arr = [];
+    for (let i = 0; i < students.length; i++) {
+        arr.push([students[i], marks[i]]);
+    }
+    return arr;
 }
-function getMarks(couple, mark) {
-    let Arr = [];
-    Arr.push(add(couple[0], mark[0]));
-    Arr.push(add(couple[1], mark[1]));
-    Arr.push(add(couple[2], mark[2]));
-    Arr.push(add(couple[3], mark[3]));
-    Arr.push(add(couple[4], mark[4]));
-    Arr.push(add(couple[5], mark[5]));
-    return Arr;
+const studentsMarks = getMarks(students, marks);
+console.log(studentsMarks);
+
+const getPairMarks = (getThemeForPairs) => {
+    let arr = [];
+    for (let i = 0; i < getThemeForPairs.length; i++) {
+        arr.push([getThemeForPairs[i], (randomIntFromInterval(1, 5))]);
+    }
+    return arr;
 }
-function getPairMarks(couple, theme) {
-    let Arr = [];
-    Arr.push(add(couple[0] + " i " + couple[2], theme[0], randomIntFromInterval(1, 5)));
-    Arr.push(add(couple[1] + " i " + couple[3], theme[1], randomIntFromInterval(1, 5)));
-    Arr.push(add(couple[4] + " i " + couple[5], theme[2], randomIntFromInterval(1, 5)));
-    return Arr;
-}
-const pairs = getPairs(students);
-const pair_and_theme = PairAndThemes(students, themes);
-const student_marks = getMarks(students, marks);
-const pair_marks = getPairMarks(students, themes);
-console.log(pairs);
-console.log(pair_and_theme);
-console.log(student_marks);
-console.log(pair_marks);
+
+const MarksForPairs = getPairMarks(getThemeForPairs);
+console.log(MarksForPairs);
