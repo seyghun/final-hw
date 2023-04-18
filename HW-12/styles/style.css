@@ -1,0 +1,97 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+
+html {
+    height: fit-content;
+}
+
+header {
+    font-family: 'Star Wars', sans-serif;
+}
+
+body {
+    background-image: url(../images/background.img);
+}
+
+.character_card img {
+    height: 200px;
+    width: 200px;
+}
+
+.film_card img {
+    height: 250px;
+    width: 200px;
+}
+
+.planet_card img {
+    height: 250px;
+    width: 250px;
+}
+
+p,
+h1 {
+    color: white;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    color: yellow;
+    padding-top: 20px;
+}
+
+header nav {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.btn {
+    margin-top: 50px;
+    width: 150px;
+    height: 50px;
+    margin-right: 50px;
+    background-image: url(../images/background.img);
+    border-radius: 10px;
+    border: 3px solid white;
+    color: aliceblue;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: bolder;
+    transition: 0.8s;
+}
+
+.btn:hover {
+    border-color: #fdec6e;
+    color: yellow;
+    text-shadow: 0px 0px 30px #fdec6e;
+    transition: 0.8s;
+    transform: scale(1.1);
+    box-shadow: 0 0 4px 4px rgb(219, 255, 57);
+}
+
+main {
+    padding-top: 100px;
+    padding-left: 75px;
+    padding-right: 50px;
+    font-family: 'Playfair Display SC', serif;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border: 5px solid white;
+    border-radius: 10px;
+    width: 300px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    transition: 0.6s;
+    font-size: large;
+}
+
+.card:hover {
+    box-shadow: 0 0 4px 4px rgb(219, 255, 57);
+}
