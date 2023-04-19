@@ -16,4 +16,4 @@ function getRandomChinese(length) {
     });
 }
 
-console.log(getRandomChinese(4));
+getRandomChinese(4).then((result) => console.log(result));
