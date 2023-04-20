@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork 13</title>
+</head>
+<style>
+    #generate_button {
+        display: flex;
+        width: 100px;
+        height: 40px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .second_block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .btn {
+        width: 100px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .font-change_buttons {
+        display: flex;
+        margin: 0 auto;
+        gap: 40px;
+        margin-top: 50px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+</style>
+
+<body>
+    <button id="generate_button">Generate next number!</button>
+    <div class="second_block">
+        <p>Наш текст!</p>
+        <span class="font-change_buttons">
+            <button id="decrease_button" class="btn">Decrease!</button>
+            <button id="increase_button" class="btn">Іncrease!</button>
+        </span>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
