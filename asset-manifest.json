@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/final-hw/static/css/main.7369f0c2.css",
+    "main.js": "/final-hw/static/js/main.b38edf1f.js",
+    "static/media/project-10.2_img.png": "/final-hw/static/media/project-10.2_img.0d26ff0757cc338a1061.png",
+    "static/media/projectFinal.png": "/final-hw/static/media/projectFinal.0cbd79db8ee77e2a40a8.png",
+    "static/media/project-12_img.png": "/final-hw/static/media/project-12_img.e8cc4821b6e0206686a7.png",
+    "static/media/project-10.1_img.png": "/final-hw/static/media/project-10.1_img.d56573a6c4bc2b5ea3fa.png",
+    "static/media/adventure-logo.png": "/final-hw/static/media/adventure-logo.fe9db1bdb365b71519ef.png",
+    "static/media/sports-logo.png": "/final-hw/static/media/sports-logo.8fff4a06e0f94ad7d446.png",
+    "static/media/project-13_img.png": "/final-hw/static/media/project-13_img.7a75dde4d17c394d20f5.png",
+    "static/media/drumKit-logo.png": "/final-hw/static/media/drumKit-logo.6b0938bf8a72e56334b6.png",
+    "static/media/myphoto.jpg": "/final-hw/static/media/myphoto.f59c0b344ae94d069eb2.jpg",
+    "static/media/starWarsApi-logo.png": "/final-hw/static/media/starWarsApi-logo.4e5d955c418528f5f0dc.png",
+    "static/media/secondFoto.jpg": "/final-hw/static/media/secondFoto.2889fe6b513541115a11.jpg",
+    "static/media/landie-logo.png": "/final-hw/static/media/landie-logo.09639e7c78aacb3ccc72.png",
+    "static/media/telegram-ico.png": "/final-hw/static/media/telegram-ico.4737729e1d14d88ca0d7.png",
+    "static/media/project-20_img.png": "/final-hw/static/media/project-20_img.7d89eca50941e8816ca7.png",
+    "static/media/project-21_img.png": "/final-hw/static/media/project-21_img.7a1e6bcec038a0ba3eaf.png",
+    "static/media/phone-ico.png": "/final-hw/static/media/phone-ico.9f67e819001cd616ba13.png",
+    "static/media/react-ico.png": "/final-hw/static/media/react-ico.598c274386446bb54ac6.png",
+    "static/media/postCreating-logo.png": "/final-hw/static/media/postCreating-logo.489ddf6af8afec0e0153.png",
+    "static/media/gps-ico.png": "/final-hw/static/media/gps-ico.659fc2a171a1d603c7dc.png",
+    "static/media/css-ico.png": "/final-hw/static/media/css-ico.463e319bad8e0edf1ef7.png",
+    "static/media/bootstrap-ico.png": "/final-hw/static/media/bootstrap-ico.268c4375260420e8d982.png",
+    "static/media/mail-ico.png": "/final-hw/static/media/mail-ico.a2f2146f929409405da0.png",
+    "static/media/js-ico.png": "/final-hw/static/media/js-ico.3dfb665e058d08c99f28.png",
+    "index.html": "/final-hw/index.html",
+    "main.7369f0c2.css.map": "/final-hw/static/css/main.7369f0c2.css.map",
+    "main.b38edf1f.js.map": "/final-hw/static/js/main.b38edf1f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7369f0c2.css",
+    "static/js/main.b38edf1f.js"
+  ]
+}
