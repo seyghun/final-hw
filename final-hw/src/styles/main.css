@@ -1,0 +1,310 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+:root {
+    --main-text-family: Arial, Helvetica, sans-serif;
+    --main-color: #3db9ff;
+}
+
+* {
+    font-family: var(--main-text-family);
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.all-projects {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    column-gap: 0px;
+    font-family: var(--main-text-family);
+    font-size: 24px;
+    width: fit-content;
+    margin-top: 120px;
+}
+
+
+.single-project_img {
+    width: 850px;
+    height: 500px;
+    border-radius: 15px;
+}
+
+.single-project_container {
+    display: flex;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.link-ico {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    color: aliceblue;
+}
+
+.single-project_left-part {
+    width: 60%;
+}
+
+.single-project_right-part {
+    width: 40%;
+    padding-right: 100px;
+    padding-top: 110px;
+}
+
+.single-project_description {
+    font-size: 25px;
+    line-height: 40px;
+    color: #B2ECE1;
+}
+
+.single-project_title {
+    padding-bottom: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px #1d1d1d6b;
+    color: #B2ECE1;
+}
+
+.single-project_description-title {
+    -webkit-text-stroke: 1px #1d1d1d6b;
+    color: #B2ECE1;
+}
+
+.single-project_tech-item {
+    width: 105px;
+    text-align: start;
+    list-style-type: square;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.single-project_text {
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    color: #B2ECE1;
+}
+
+.single-project_link {
+    transition: .5s;
+    padding: 7px;
+}
+
+.single-project_link:visited {
+    color: black;
+}
+
+.single-project_link:hover {
+    background-color: #B2ECE1;
+    border-radius: 5px;
+}
+
+.used-tech {
+    font-size: 25px;
+    -webkit-text-stroke: 1px #1d1d1d6b;
+    color: #B2ECE1;
+}
+
+.single-project_tech-container {
+    margin-top: 40px;
+}
+
+.single-project_tech-list {
+    padding-left: 20px;
+    color: #B2ECE1;
+}
+
+#menu__toggle {
+    visibility: hidden;
+}
+
+.burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myFoto {
+    height: 550px;
+    width: 450px;
+    border-radius: 7px;
+}
+
+.main-info-container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+.main-info_foto-part {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.main-info_text-part {
+    width: 60%;
+    margin-top: 90px;
+}
+
+.info-icons {
+    width: 50px;
+    height: 50px;
+}
+
+.info-links {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+    font-size: 25px;
+}
+
+.info-links p,
+i {
+    font-family: 'Russo One', sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #1d1d1d6b;
+    background-color: #B2ECE1;
+}
+
+
+.main-info_text-part h2 {
+    font-size: 60px;
+    font-weight: 800;
+    -webkit-text-stroke: 1px #1d1d1d6b;
+    color: #B2ECE1;
+}
+
+.position-text {
+    font-size: 33px;
+    font-weight: 600;
+    -webkit-text-stroke: 1px #1d1d1d6b;
+    color: #B2ECE1;
+}
+
+.first-info-link {
+    margin-top: 90px;
+}
+
+.aboutMe-container {
+    display: flex;
+}
+
+.aboutMe-left-part {
+    width: 40%;
+}
+
+.aboutMe-right-part {
+    width: 60%;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 200px;
+}
+
+.aboutMe-right-part h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Russo One', sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #1d1d1d6b;
+    background-color: #B2ECE1;
+}
+
+.secondFoto {
+    width: 95%;
+    height: 100%;
+    padding-left: 50px;
+    padding-top: 40px;
+    border-radius: 50%;
+}
+
+.aboutMe-skills-text h2 {
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+
+.aboutMe-profile-text p {
+    line-height: 30px;
+    font-size: 18px;
+    color: #B2ECE1;
+    font-weight: 900;
+}
+
+.aboutMe-skills-text div {
+    font-size: 21px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    color: #B2ECE1;
+    white-space: pre-wrap;
+}
+
+.skills-ico {
+    height: 35px;
+    width: 35px;
+}
+
+.aboutMe-skills-text div b {
+    margin-left: 15px;
+    color: black;
+}
+
+.all-experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    width: 500px;
+}
+
+.experience-card_title-div {
+    padding: 25px;
+    line-height: 45px;
+}
+
+.experience-card-title {
+    font-size: 35px;
+    font-family: 'Russo One', sans-serif;
+    background-color: #1F487E;
+    color: #FFFF;
+    padding: 15px;
+    border-radius: 5px 5px 0 0;
+}
+
+.experience-card-text {
+    font-size: 25px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.experience-card_text-container {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    width: 500px;
+    padding: 10px;
+}

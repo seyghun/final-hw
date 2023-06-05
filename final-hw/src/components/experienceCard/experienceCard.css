@@ -1,0 +1,37 @@
+.experience-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    width: 500px;
+}
+
+.experience-card_title-div {
+    padding: 25px;
+    line-height: 45px;
+}
+
+.experience-card-title {
+    font-size: 35px;
+    font-family: 'Russo One', sans-serif;
+    background-color: #1F487E;
+    color: #FFFF;
+    padding: 15px;
+    border-radius: 5px 5px 0 0;
+}
+
+.experience-card-text {
+    font-size: 25px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.experience-card_text-container {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    width: 500px;
+    padding: 10px;
+}
